@@ -5,12 +5,13 @@ async function handleSubmit(event) {
  
   let formText = document.getElementById("url").value;
 
+   
   if (linkChecker(formText)) {
     try {
 
       let submitBtn = document.getElementById("submitBtn");
   
-      let logger = document.getElementById("logger");
+      var logger = document.getElementById("logger");
 
       console.log("::: Form Submitted :::");
 
